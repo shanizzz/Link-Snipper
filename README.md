@@ -8,8 +8,7 @@ A full-stack URL shortener with a FastAPI backend and React frontend. Shorten lo
 - Copy short links to clipboard
 - List all shortened links with click counts
 - Delete links
-- 4 themes: Midnight, Light, Ocean, Sunset
-- No API keys required
+- Light and dark mode
 
 ## Tech Stack
 
