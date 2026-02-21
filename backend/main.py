@@ -10,7 +10,7 @@ from pydantic import BaseModel
 
 from database import init_db, create_link, get_link, get_all_links, update_link_title, delete_link
 
-app = FastAPI(title="URL Shortener API", version="1.0.0")
+app = FastAPI(title="Link Snipper API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -33,7 +33,7 @@ def startup():
 
 @app.get("/")
 async def root():
-    return {"message": "URL Shortener API", "docs": "/docs"}
+    return {"message": "Link Snipper API", "docs": "/docs"}
 
 
 async def _check_reachable(url: str) -> bool:
